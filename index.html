@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movix</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img
+            src="logo.png"
+            alt="Movix Logo"
+          />
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Movies</a></li>
+            <li><a href="#" id="tvShowsLink">TV Shows</a></li>
+            <li><a href="recommendations.html">Recommendations</a></li>
+            <li>
+              <a href="index.html"><i class="fas fa-search"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero-banner">
+      <div class="backdrop-img">
+        <!-- Background image will be set via CSS -->
+        <div class="opacity-layer"></div>
+      </div>
+      <div class="content">
+        <div class="text-content">
+          <h1>Welcome.</h1>
+          <h2>
+            Millions of movies, TV shows and people to discover. Explore now.
+          </h2>
+        </div>
+        <div class="search-input">
+          <input type="text" placeholder="Search for a movie or tv show..." />
+          <button>Search</button>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="all-movies-section"
+      id="allMoviesSection"
+      style="display: none"
+    >
+      <div class="container">
+        <h2>All Movies</h2>
+        <div class="movies-grid" id="allMoviesGrid">
+          <!-- All movies will be loaded here -->
+        </div>
+      </div>
+    </section>
+
+    <section class="trending-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Trending</h2>
+        </div>
+        <div class="movies-grid" id="trendingMoviesGrid">
+          <!-- Trending movies will be loaded here -->
+        </div>
+        
+      </div>
+    </section>
+
+    <section class="popular-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Popular</h2>
+        </div>
+        <div class="movies-grid" id="popularMoviesGrid">
+          <!-- Popular movies/tv shows will be loaded here -->
+        </div>
+        
+      </div>
+    </section>
+
+    <section class="top-rated-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Top Rated</h2>
+
+        </div>
+        <div class="movies-grid" id="topRatedMoviesGrid">
+          <!-- Top Rated movies/tv shows will be loaded here -->
+        </div>
+        
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img
+            src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_short-8e7b5953a7bfa192396b93d5f8cdbb5578262da46bdfe936e42a12ee71ee3197.svg"
+            alt="Movix Logo"
+          />
+        </div>
+        <ul class="footer-links">
+          <li><a href="#">Terms Of Use</a></li>
+          <li><a href="#">Privacy-Policy</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+        <div class="footer-text">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
+          </p>
+        </div>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 MovieMate. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</html>
